@@ -19,6 +19,13 @@ void AOverlayMaterialTestActor::RefreshOverlayMaterials() const
 	}
 }
 
+void AOverlayMaterialTestActor::OnConstruction(const FTransform& Transform)
+{
+	Super::OnConstruction(Transform);
+
+	RefreshOverlayMaterials();
+}
+
 void AOverlayMaterialTestActor::BeginPlay()
 {
 	Super::BeginPlay();

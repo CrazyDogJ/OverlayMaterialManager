@@ -22,5 +22,7 @@ public:
 	UFUNCTION(CallInEditor, Category = "Overlay Manager")
 	void RefreshOverlayMaterials() const;
 
+	virtual void OnConstruction(const FTransform& Transform) override;
+
 	virtual void BeginPlay() override;
 };
