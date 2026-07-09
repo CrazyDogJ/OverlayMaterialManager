@@ -21,4 +21,6 @@ public:
 
 	UFUNCTION(CallInEditor, Category = "Overlay Manager")
 	void RefreshOverlayMaterials() const;
+
+	virtual void BeginPlay() override;
 };

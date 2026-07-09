@@ -18,3 +18,10 @@ void AOverlayMaterialTestActor::RefreshOverlayMaterials() const
 		OverlayMaterialDataAsset->SetOverlayMaterials(GetSkeletalMeshComponent(), true, false);
 	}
 }
+
+void AOverlayMaterialTestActor::BeginPlay()
+{
+	Super::BeginPlay();
+
+	RefreshOverlayMaterials();
+}
