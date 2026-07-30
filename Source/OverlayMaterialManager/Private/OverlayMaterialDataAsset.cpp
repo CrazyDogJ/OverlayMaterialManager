@@ -51,6 +51,7 @@ void UOverlayMaterialDataAsset::SetOverlayMaterials(USkeletalMeshComponent* InCo
 	}
 }
 
+#if WITH_EDITOR
 void UOverlayMaterialDataAsset::PostEditChangeProperty(struct FPropertyChangedEvent& PropertyChangedEvent)
 {
 	Super::PostEditChangeProperty(PropertyChangedEvent);
@@ -63,3 +64,4 @@ void UOverlayMaterialDataAsset::PostEditChangeProperty(struct FPropertyChangedEv
 		}
 	}
 }
+#endif

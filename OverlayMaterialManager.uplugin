@@ -3,7 +3,7 @@
 	"Version": 1,
 	"VersionName": "1.0",
 	"FriendlyName": "OverlayMaterialManager",
-	"Description": "",
+	"Description": "A plugin that manage skeletal mesh overlay materials and contains example toon shader materials. ONLY FOR 5.8",
 	"Category": "Other",
 	"CreatedBy": "CrazyDog",
 	"CreatedByURL": "",
@@ -18,6 +18,16 @@
 			"Name": "OverlayMaterialManager",
 			"Type": "Runtime",
 			"LoadingPhase": "Default"
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "DeformerGraph",
+			"Enabled": true
+		},
+		{
+			"Name": "BaseMaterial",
+			"Enabled": true
 		}
 	]
 }

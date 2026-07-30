@@ -27,5 +27,7 @@ public:
 	void SetOverlayMaterials(USkeletalMeshComponent* InComponent, bool bSetMesh = true, bool bDynamicMaterial = true);
 	
 protected:
+#if WITH_EDITOR
 	virtual void PostEditChangeProperty(struct FPropertyChangedEvent& PropertyChangedEvent) override;
+#endif
 };
